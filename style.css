@@ -1,0 +1,291 @@
+/* Styles généraux */
+body {
+  
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    padding-left: 20px;    
+}
+
+/* Positionnement du nom en haut à gauche */
+.name{
+    display : flex;
+    justify-content: space-between; /* permet d'ajuster selon les ecran */
+    align-items: center;
+    padding-left : 10px;
+    margin: 0 ; /*permet d'ajuster la marche selon l'ecran */
+}
+.name h1  {
+    font-size: 20px;
+   
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: column; /* Alignement pour les petites ecran */
+    margin-top: 20px;
+}
+
+.stylelist {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* par defaut, en ligne */
+    gap: 10px;
+}
+
+.stylelist li {
+    display: inline;
+}
+
+.stylelist a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    padding: 0px;
+}
+
+.stylelist a:hover, .stylelist a:focus {
+    font-style: italic;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #242525;
+    border-radius: 10px;
+}
+.icone{
+    display :relative;
+    justify-content: center;
+    align-items: center;
+    padding-top:o;
+    margin-left: ocm;
+    
+}
+
+/* Section "À propos de moi" */
+.corps {
+    text-align: center;
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+.profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50% ;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+/* Section "Mes compétences" */
+#skills {
+    margin-top: 60px;
+    text-align: center;
+    
+}
+
+#skills div {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+   
+}
+
+#skills img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+
+}
+
+/* Section "Projects" */
+.projects {
+    margin-top: 60px;
+    padding-bottom:20px;
+}
+
+.projects h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    justify-content: justify;
+}
+.styleproject{
+    font-size: 15px;
+    color : red;
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Section "Recommandations" */
+.recom {
+    margin-top: 30px;
+    text-align: center;
+    display : flex;
+    flex-direction: column;
+    gap : 10px;
+    
+}
+
+.recom p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.recom1, .recom2, .recom3  {
+    border : 2px solid rgb(12, 121, 155);
+    padding : 20px;
+    margin: 10px;
+    background-color: aqua;
+    border-radius: 10px; 
+
+}
+.h1recom{
+    font-size: 25px ;
+    border-end-end-radius: 10px;
+}
+
+
+/* Icône d'accueil */
+/* .icone {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+}
+
+.icone p {
+    margin: 0;
+} */
+
+.fa-phone, .fa-facebook {
+    margin-right: 5px;
+}
+
+/* Pop-up de soumission de recommandation */
+.recommendation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.recommendation input {
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e90b0b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.photo{
+  display : flex;
+  flex-wrap:wrap; /*permet à la photo de passer a la ligne si possible */
+  gap : 20px;
+  padding-top: 30px;
+  padding-block-end: 30px;
+}
+.photo img{
+    width: 100%x;
+    max-width: 250px; /*permet d'ajsuter selon la largeur des images´*/
+    height:auto;
+}
+/* Styles pour rendre le site responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /*alignement  verticale pour les petits écran */
+    }
+
+    .stylelist {
+        flex-direction: column; /*alignement  verticale pour les petits écran */
+        gap: 10px;
+    }
+
+    .name h1 {
+        font-size: 20px;
+    }
+
+    .profil {
+        width: 120px;
+        height: 120px;
+    }
+
+    #skills img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .projects h1, .recom h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .name h1 {
+        font-size: 18px;
+    }
+
+    .profil {
+        width: 100px;
+        height: 100px;
+    }
+
+    #skills img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .projects h1, .recom h1 {
+        font-size: 18px;
+    }
+}
+@media (max-width : 768px) {
+    .projects h1 {
+        font-size : 20px;
+    }
+    
+}
+@media(max-width : 480px) {
+    .projects h1 {
+        font-size : 18px;
+    }
+}
+@media (max-width : 768 px) {
+    .recom{
+        gap : 20px:
+    }
+}
+@media (max-width : 480px){
+    .recom p {
+        font-size : 16px;
+    }
+}
+
+/* Pour les petits écrans */
+@media (max-width: 768px) {
+    .icone {
+        margin-left: 10px; /* Réduit la marge pour les écrans plus petits */
+    }
+}
+
+/* Pour les très petits écrans */
+@media (max-width: 480px) {
+    .icone {
+        margin-left: 5px; /* Réduit encore la marge */
+    }
+}

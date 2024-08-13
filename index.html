@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freddy kaseya </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="tete">
+        <div class="p1">
+            <div class="name">
+                <div class="name0"> <h1>Freddy kaseya </h1>
+                    <div class="icone">
+                        <p><i class="fa-solid fa-phone"></i>mr_fred_kaseya</p>
+                         <p><i class="fa-brands fa-facebook"></i> Freddy kaseya</p>
+                     </div></div>
+               
+                <nav class="navbar">
+                    <ul class="stylelist">
+                        <li><a href="#about">A propos</a></li>
+                        <li><a href="#projectdetails"> Detailes du projet</a></li>
+                        <li><a href="#skills"> Mes competences </a></li>
+                        <li><a href="#recommandations">Recommanadations</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+           
+           
+        </div>
+    </section>
+    <hr>
+    <section class="corps">
+        <p class="corp1"> À propos de moi</p>
+        <img src="./assets/profil (1).jpg" alt="freddy kaseya " class="profil">
+        <h4>Freddy kaseya</h4>
+        <p id="about">
+            Je m'appelle Freddy Kaseya, J'ai de 22 ans. <br>
+            Mon parcours professionnel a débuté très tôt : à seulement 15 ans, <br>
+            j'ai cofondé une agence de marketing digital et de design dans en République démocratique du congo, <br>
+            dont le nom est Business Line africa. <br>
+            Cette aventure a été le point de départ d'une carrière dédiée à l'innovation <br>
+            et à la créativité. <br>
+            La persévérance et la discipline sont les valeurs fondamentales qui guident ma carrière et ma vie. <br>
+            Mon objectif est d'inspirer ceux qui lisent mon histoire, <br>
+             en leur montrant que le succès est possible avec de la persévérance et un esprit résilient.
+
+        </p>
+        <hr>
+        <div id="skills">
+              <h2 class="compentece">Mes skills</h2> <br>
+              <div class="html">
+                    <img src="./assets/html.png" alt="html" class="python">   
+                    <h4>html</h4>
+                    <img src="./assets/css.png" alt="css">
+                    <h4>css</h4>
+              </div> 
+              <div class="python">
+                    <img src="./assets/python.jpeg" alt="">
+                    <h4>python</h4>
+                    <img src="./assets/react.png" alt="">
+                    <h4>react</h4>
+              </div>
+              <div class="sql">
+                <img src="./assets/sql.jpeg" alt="">
+                <h4>sql</h4>
+              </div>
+           
+
+        </div>
+        <hr>
+        <div class="projects">
+            <h1>Projects</h1>
+            <ul>
+                <h4 class="styleproject">site web</h4>
+                <li>conception  d'un site ecommerce</li>
+                <h4 class="styleproject">chat bot</h4>
+                <li>J'ai pu concevoir un chatbot avec le langage python, <br> mon chatbot était basé sur des questions bien prescises</li>
+                <h4 class="styleproject">Traducteur de langage</h4>
+                <li>mon traducteur traduis le français et l'anglais</li>
+            </ul>
+        </div>
+       
+    </section>
+     <!-- Section des recommandations -->
+      <h1 class="h1recom">Recommanadations</h1>
+      <div class="recom">
+        <p class="recom1">  Freddy allie créativité et discipline, <br>un partenaire idéal pour réussir.</p>
+        <p class="recom2">Freddy est un entrepreneur brillant,<br> toujours prêt à relever de nouveaux défis.</p>
+        <p class="recom3">Freddy transforme chaque obstacle <br>en opportunité avec détermination.</p>
+      </div>
+        <section id="recommandations">
+            <h2>soumettre une Recommandation</h2>
+                <!-- Exemple de recommandation -->
+            <div class="recommendation">
+               <form action="/submit" class="action" method="post">
+                   <input type="text" id="userinput" name="userinput" placeholder = "tapez votre texte">
+                   
+               </form>
+
+            </div>
+            <!-- Bouton pour soumettre une recommandation -->
+            <button onclick="submitRecommendation()">Soumettre</button>
+            <section class="foot">
+
+        </section>
+        <div class="photo">
+            <img src="./assets/photo 1.jpg" alt="freddy kaseya " class="photo1">
+            <img src="./assets/sortie.jpg" alt="fredy kaseya ">
+            
+            <img src="./assets/IMG_0702.JPG" alt="fredy kaseya ">
+            <img src="./assets/IMG_9637.JPG" alt="freddy kaseya ">
+        </div>
+    <script>
+        function submitRecommendation() {
+            alert("Votre recommandation a été soumise avec succès !");
+        }
+    </script>
+</body>
+</html>
